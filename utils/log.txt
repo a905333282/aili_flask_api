@@ -1,0 +1,18 @@
+2021-08-26 17:48:48,391 - [INFO] - __main__ - [function : <module>] - [file : log.py] - Start print log
+2021-08-26 17:48:48,392 - [WARNING] - __main__ - [function : <module>] - [file : log.py] - Something maybe fail.
+2021-08-26 17:48:48,392 - [INFO] - __main__ - [function : <module>] - [file : log.py] - Finish
+2021-08-26 17:49:48,782 - [INFO] - __main__ - [function : <module>] - [file : log.py] - Start print log
+2021-08-26 17:49:48,783 - [WARNING] - __main__ - [function : <module>] - [file : log.py] - Something maybe fail.
+2021-08-26 17:49:48,783 - [INFO] - __main__ - [function : <module>] - [file : log.py] - Finish
+2021-08-26 17:50:55,570 - [INFO] - __main__ - [function : <module>] - [file : log.py] - Start print log
+2021-08-26 17:50:55,571 - [WARNING] - __main__ - [function : <module>] - [file : log.py] - Something maybe fail.
+2021-08-26 17:50:55,573 - [INFO] - __main__ - [function : <module>] - [file : log.py] - Finish
+2021-08-26 17:51:17,321 - [INFO] - __main__ - [function : <module>] - [file : log.py] - Start print log
+2021-08-26 17:51:17,321 - [WARNING] - __main__ - [function : <module>] - [file : log.py] - Something maybe fail.
+2021-08-26 17:51:17,321 - [INFO] - __main__ - [function : <module>] - [file : log.py] - Finish
+2021-08-26 17:51:47,992 - __main__ - INFO - Start print log
+2021-08-26 17:51:47,992 - __main__ - WARNING - Something maybe fail.
+2021-08-26 17:51:47,993 - __main__ - INFO - Finish
+2021-08-26 21:39:12,045 - __main__ - INFO - Start print log
+2021-08-26 21:39:12,047 - __main__ - WARNING - Something maybe fail.
+2021-08-26 21:39:12,047 - __main__ - INFO - Finish
