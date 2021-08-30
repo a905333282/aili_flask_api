@@ -1,15 +1,11 @@
-from myapp import db
-from hmac import compare_digest
+# coding: utf-8
 
 from sqlalchemy import Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-
-
-Base = declarative_base()
-metadata = Base.metadata
+from aili_api import db
 
 
 class User(db.Model):
+
     __tablename__ = 'users'
 
     id = Column(Integer, primary_key=True)
@@ -19,5 +15,5 @@ class User(db.Model):
     email = Column(String(100))
     full_name = Column(String(20))
 
-    def check_password(self, password):
-        return compare_digest(password, "password")
+    def __str__(self):
+        return str(self.username)
