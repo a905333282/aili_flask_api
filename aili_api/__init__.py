@@ -1,9 +1,6 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
 from config import config_mapper
 from flask_wtf import CSRFProtect
-
-db = SQLAlchemy()
 
 
 def create_app(config):
@@ -16,9 +13,10 @@ def create_app(config):
     app = Flask(__name__)
     app.config.from_object(config_mapper.get(config))
 
-    db.init_app(app)
+    from utils import db, jwt
 
-    CSRFProtect(app)
+    db.init_app(app)
+    jwt.init_app(app)
 
     from aili_api import v1
 

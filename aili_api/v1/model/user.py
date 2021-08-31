@@ -1,7 +1,8 @@
 # coding: utf-8
 
+from hmac import compare_digest
 from sqlalchemy import Column, Integer, String
-from aili_api import db
+from utils import db
 
 
 class User(db.Model):
@@ -14,6 +15,9 @@ class User(db.Model):
     phone = Column(String(20))
     email = Column(String(100))
     full_name = Column(String(20))
+
+    def check_password(self, password):
+        return compare_digest(self.password, password)
 
     def __str__(self):
         return str(self.username)
