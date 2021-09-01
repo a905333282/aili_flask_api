@@ -60,7 +60,7 @@ def refresh():
 @user_router.route("/protected", methods=["GET"])
 @admin_required()
 def protecte():
-    return jsonify(foo="foo")
+    return jsonify(ok="ok")
 
 
 @user_router.route("/logout", methods=["DELETE"])
